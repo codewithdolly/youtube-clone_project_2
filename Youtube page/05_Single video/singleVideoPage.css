@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  
+  /* Navbar Starts */
+  
+  i {
+    margin: 5px;
+    color: gray;
+  }
+  
+  ::placeholder {
+    padding-left: 7px;
+  }
+  
+  .navBar {
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .navBar .navbar_items {
+    display: flex;
+    margin: 2px 12px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navBar .navbar_item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navBar .navbar_item .navBar_logo{
+  }
+  .navBar .navbar_item .navBar_logo_img {
+    margin-left: 40px;
+  }
+  
+  .navBar_search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navBar_search .navBar_Search_input {
+    padding: 8px 0;  
+    width: 35rem;
+    border: gray 1px solid;
+    border-radius: 2px;
+  }
+  
+  .navBar_search .navBar_search_icon {
+    padding:6px 18px;
+    margin-left: -5px;
+    border: gray 1px solid;
+    border-radius: 2px;
+
+    background-color: #dbd8d8;
+  }
+  
+  .navBar_search .navBar_search_mic {
+    background-color: #dad8d8;
+    padding: 7px;
+    border-radius: 50%;
+  }
+  
+  .navBar_icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navBar_icons .navBar_icons_user {
+    background-color: #dad8d8;
+    padding: 7px;
+    border-radius: 50%;
+  }
+  
+   /* //  Navebar ends */
+
+  
+
+.core_sidebar2 {
+  height: calc(100vh - 70px);
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar2 {
+  width: 250px;
+  height: 100%;
+  background-color: #faffff;
+  overflow-y: scroll;
+}
+
+.sidebar_icons2 {
+  display: flex;
+  text-align: left;
+  padding: 8px 30px;   
+
+}
+
+.sidebar_icons2:hover {
+  background-color: rgb(231, 231, 231);
+  ;
+
+}
+
+.sidebar_icon2 a {
+  color: gray;
+}
+
+.sidebar_navbar {
+  margin-left: 1rem;
+  margin-top: -10px;
+  color: rgb(116, 114, 114);
+  font-weight: bold;
+}
+
+
+/* Fullside bar Ends */
+  
+  /* // Video Suggestions starts */ 
+  
+  .videoSuggestions {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* margin-left: 24px; */
+    overflow-x: scroll;
+  }
+  
+ .video_suggestion {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 0;
+    height: 30px;
+    background-color:white;
+  }
+
+
+  
+ .video_suggestion_tag {
+    text-decoration: none;
+    font-size: 14px;
+    background-color: #dad8d8;
+    color: #242323;
+    padding: 8px 20px;
+    margin: 0 5px;
+    border-radius: 20px;
+  }
+
+ .hr_line{
+   margin-left: 6rem;
+ }
+
+
+ /* Video Listing */
+
+.video_Details{
+  display: flex;
+  width: 90%;
+  height: 90%;
+  margin-top: 20px;
+  padding: 25px 15px;
+  overflow-y: scroll;
+  position: fixed;
+  clear: both;
+  margin-left: 100px;
+  background-color: rgba(245, 241, 241, 0.726);
+}
+
+.video_play{
+  width: 65%;
+}
+
+.video_Status{
+  display: flex ;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.video_like{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Border_like{
+  border-bottom: gray 5px solid;
+}
+
+hr{
+  color: gray;
+}
+
+.video_details{
+  display: flex;
+ flex-direction: row;
+  margin-top: 10px;
+
+}
+.video_details .channel_img img{
+  width: 70px;
+  border-radius: 50%;
+  margin-top: -5px;
+  margin-left: -5px;
+  
+}
+
+.video_title{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+}
+.name{
+  font-weight: 600;
+  color: black;
+}
+
+.subscribes{
+  margin-left: 30rem;
+  margin-top: 10px;
+}
+.subscribe_btn {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+  background-color:rgb(231, 228, 228);
+  padding: 14px 20px;
+
+}
+
+.comments{
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+  margin-right: 5px;
+ 
+}
+
+.notes{
+  margin-top: 10px;
+  margin-left: 10px;
+   margin-bottom: 10px;
+}
+
+.comment_like{
+  display: flex;
+}
+details{
+margin-bottom: 30px;
+}
+
+.core_Suggestion {
+  width: 35%;
+}
+
+.video_title{
+  margin-left: 10px;
+}
+.related_Video{
+  display: flex;
+  line-height: 22px;
+  margin: 10px 0;
+}
+.video_thumbnail, iframe{
+  width: 200;
+  height: 100;
+}
+
+@media only screen and (max-width: 600px){
+  #search_desktop{
+    display: none;
+  }
+  
+}

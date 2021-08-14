@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ff6d44ecaf.js" crossorigin="anonymous"></script>
+
+    <!-- Google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS Link -->
+
+    <link rel="stylesheet" href="./singleVideoPage.css">
+
+    <title>Youtube Home</title>
+
+</head>
+
+<body>
+    <!-- Navbar Starts -->
+
+    <div class="navBar">
+        <div class="navbar_items">
+            <div class="navbar_item">
+                <div class="navBar_home">
+                    <a href="#" id="btn" onclick="toggleHide()"><i class="material-icons">
+                            menu</i></a>
+                </div>
+                <div class="navBar_logo">
+                    <a href="https://www.youtube.com/"><img src="./Images/youtube logo.png" alt="youtube logo"
+                            class="navBar_logo_img" style="width: 120px; "></a>
+                </div>
+            </div>
+
+            <div class="navBar_search" id="search_desktop">
+                <div>
+                    <input type="text" name="" value="" placeholder="Search" class="navBar_Search_input">
+                </div>
+
+                <div>
+                    <a href="#"><i class="material-icons  navBar_search_icon" style="font-size: 20px;">
+                            search
+                        </i></a>
+
+                </div>
+                <div>
+                    <a href="#"><i class="material-icons navBar_search_mic">
+                            mic
+                        </i></a>
+                </div>
+            </div>
+
+            <div class="navBar_icons">
+
+                <div>
+                    <a href="#"><i class="material-icons">
+                            file_upload
+                        </i></a>
+                </div>
+
+                <div>
+                    <a href="#"><i class="material-icons">
+                            apps
+                        </i></a>
+                </div>
+
+                <div>
+                    <a href="#"><i class="material-icons">
+                            notifications
+                        </i></a>
+                </div>
+
+                <div>
+                    <a href="../01_Login page/01_google_Login_Page.html"><img src="./Images/dolly.png" alt="user logo"
+                            title="Ligin" width="60px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hr_line">
+    <!-- Navbar ends -->
+
+
+
+    <!-- ON CLICK SIDEBAR STARTS -->
+
+    <!-- Sidebar Starts -->
+    <div class="core_sidebar2" id="full_Sidebar" style="display: none; width: 70px;">
+        <div class="sidebar2">
+
+            <div class="sidebar_icons2" style=" padding-top: 15px;background-color: rgb(231, 231, 231);">
+
+                <!-- Icon1 -->
+
+                <div style="color: red;" class="sidebar_icon2">
+                    <a href="#"><i class="material-icons" style="color: red;">
+                            home
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Home</p>
+                </div>
+
+            </div>
+
+            <!-- icon2 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            explore
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Explore</p>
+                </div>
+
+            </div>
+
+            <!-- icon2 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            subscriptions
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Subscriptions</p>
+                </div>
+
+            </div>
+
+            <hr>
+            <!-- icon3 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            video_library
+
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Library</p>
+                </div>
+
+            </div>
+
+
+            <!-- icon4 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            history
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>History</p>
+                </div>
+
+            </div>
+
+            <!-- icon5 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            watch_later
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Watch later</p>
+                </div>
+
+            </div>
+
+            <!-- icon6 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            thumb_up
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Likes</p>
+                </div>
+
+            </div>
+            <!-- icon7 -->
+            <p style="color: gray; margin-left: 8px;"><strong>MORE FROM YOUTUBE</strong></p>
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            play_circle_filled
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>YouTube Video Premium</p>
+                </div>
+
+            </div>
+
+            <!-- icon8 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            theaters
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Movies</p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- icon9 -->
+            <p style="color: gray; margin-left: 8px;"><strong>FUN & LEARN TOGETHER</strong></p>
+
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            sports_esports
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Gaming</p>
+                </div>
+
+            </div>
+
+            <!-- icon10 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            online_prediction
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Live</p>
+                </div>
+
+            </div>
+
+            <!-- icon11 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            emoji_objects
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Learning</p>
+                </div>
+
+            </div>
+
+
+            <!-- icon12 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            emoji_events
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Sports</p>
+                </div>
+
+            </div>
+            <hr>
+
+            <!-- icon13 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            settings
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Settings</p>
+                </div>
+
+            </div>
+
+            <!-- icon14 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            assistant_photo
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Report history</p>
+                </div>
+
+            </div>
+
+            <!-- icon15 -->
+            <div class="sidebar_icons2">
+                <div class="sidebar_icon2">
+                    <a href="#"><i class="material-icons">
+                            contact_support
+                        </i></a>
+                </div>
+                <div class="sidebar_nav">
+                    <p>Help</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Video List Starts -->
+    <div class="video_Details">
+        <div class="video_play">
+            <div class="videos_list">
+                <iframe width="850" height="500" src="https://www.youtube.com/embed/PqLJ-0eDsg0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div>
+                    <p style="font-size: 18px; margin: 15px 0;">अप्पम पैन में बनाये आम की केक || Mango cake in Appe
+                        Pan||
+                    </p>
+                </div>
+
+                <div class="video_Status">
+
+                    <div>
+                        <p>1,503 views. May 9, 2020</p>
+                    </div>
+
+                    <div class="video_like" onclick="addLike()">
+                        <div style="border-bottom: gray 4px solid;" onclick="addLike()"><i class="material-icons">
+                                thumb_up
+                            </i><span id="likecount">31</span>
+                        </div>&nbsp;&nbsp;
+
+                        <div style="border-bottom: gray 4px solid;"><i class="material-icons">
+                                thumb_down
+                            </i>0</a>
+                        </div>&nbsp;
+
+                        <div><i class="material-icons">
+                                shortcut
+                            </i> SHARE
+                        </div>&nbsp;
+
+                        <div><i class="material-icons">
+                                playlist_add
+                            </i>SAVE
+                        </div>&nbsp;
+
+                        <div><i class="material-icons">
+                                more_horiz
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+
+            <div class="video_details">
+                <div class="channel_img">
+                    <img src="./Images/dolly.png" alt="">
+                </div>
+                <div class="video_title">
+                    <p class="name">Dolly Ki Duniya<span class="material-icons">
+                            check_circle
+                        </span></p>
+                    <small onclick="SubscribeCount()">304 <span>subscribers</span> </small>
+                </div>
+                <div class="subscribes">
+                    <a id="likecount" href="#" class="subscribe_btn"> SUBSCRIBE</a><span><i class="material-icons ">
+                            notifications_active
+                        </i></span>
+                </div>
+            </div>
+
+            <!-- Video List Ends -->
+
+            <hr>
+            <!-- Comment Starts -->
+
+            <div class="comments">
+                <p>11 comments</p>
+                <div class="notes"><i class="material-icons ">
+                        notes
+                    </i><span>SHOTR BY</span>
+                </div>
+            </div>
+            <hr>
+
+            <div>
+                <!--  Comment 1 -->
+                <div class="comment video_details">
+                    <div class="channel_img">
+                        <h2
+                            style="padding: 8px; background-color: rgb(255, 0, 242); color: white; border-radius: 50px;">
+                            R</h2>
+                    </div>
+                    <div class="video_title">
+                        <p class="name">Rashi More <small style="color: gray;">2 months ago</small></p>
+                        <p>Looks delicious!</p>
+
+                        <div class="comment_like">
+                            <i class="material-icons">
+                                thumb_up
+                            </i>&nbsp;&nbsp;
+
+                            <i class="material-icons">
+                                thumb_down
+                            </i></a>
+                            <p class="notes">REPLY</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--  Comment 2 -->
+                <div class="comment video_details">
+                    <div class="channel_img">
+                        <h2 style="padding: 10px; background-color: red; color: white; border-radius: 50px;">S</h2>
+                    </div>
+                    <div class="video_title">
+                        <p class="name">Shani Apshara <small style="color: gray;">2 months ago</small></p>
+                        <p>Looks yummy 😋</p>
+
+                        <div class="comment_like">
+                            <i class="material-icons">
+                                thumb_up
+                            </i>&nbsp;&nbsp;
+
+                            <i class="material-icons">
+                                thumb_down
+                            </i></a>
+                            <p class="notes">REPLY</p>
+                        </div>
+
+                        <details>
+                            <summary><a href="#" style="color: rgb(36, 129, 250); font-weight: 700;">View reply from
+                                    dolly ki duniya </a></summary>
+                            <p>Thank you!</p>
+                        </details>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!--  Comment 3 -->
+            <div class="comment video_details">
+                <div class="channel_img">
+                    <h2 style="padding: 10px; background-color: rgb(250, 234, 6); color: white; border-radius: 50px;">J
+                    </h2>
+                </div>
+                <div class="video_title">
+                    <p class="name">Jalora's Kitchen<small style="color: gray;">1 year ago</small></p>
+                    <p>Awesome</p>
+
+                    <div class="comment_like">
+                        <i class="material-icons">
+                            thumb_up
+                        </i>&nbsp;&nbsp;
+
+                        <i class="material-icons">
+                            thumb_down
+                        </i></a>
+                        <p class="notes">REPLY</p>
+                    </div>
+
+                    <details>
+                        <summary><a href="#" style="color: rgb(36, 129, 250); font-weight: 700;">View reply from
+                                dolly ki duniya </a></summary>
+                        <p>Thanks!</p>
+                    </details>
+                </div>
+            </div>
+
+
+
+            <!--  Comment 2 -->
+            <div class="comment video_details">
+                <div class="channel_img">
+                    <h2 style="padding: 10px; background-color: rgb(72, 255, 0); color: white; border-radius: 50px;">R
+                    </h2>
+                </div>
+                <div class="video_title">
+                    <p class="name">RHUL SACHDEV <small style="color: gray;">2 months ago</small></p>
+                    <p>Very nice...</p>
+
+                    <div class="comment_like">
+                        <i class="material-icons">
+                            thumb_up
+                        </i>&nbsp;&nbsp;
+
+                        <i class="material-icons">
+                            thumb_down
+                        </i></a>
+                        <p class="notes">REPLY</p>
+                    </div>
+
+                    <details>
+                        <summary><a href="#" style="color: rgb(36, 129, 250); font-weight: 700;">View reply from
+                                dolly ki duniya </a></summary>
+                        <p>Thank you!</p>
+                    </details>
+                </div>
+
+            </div>
+
+
+
+            <!--  Comment 2 -->
+            <div class="comment video_details">
+                <div class="channel_img">
+                    <h2 style="padding: 10px; background-color: rgb(255, 115, 0); color: white; border-radius: 50px;">
+                        R</h2>
+                </div>
+                <div class="video_title">
+                    <p class="name">Ritesh Partil <small style="color: gray;">2 months ago</small></p>
+                    <p>Nice recipe</p>
+
+                    <div class="comment_like">
+                        <i class="material-icons">
+                            thumb_up
+                        </i>&nbsp;&nbsp;
+
+                        <i class="material-icons">
+                            thumb_down
+                        </i></a>
+                        <p class="notes">REPLY</p>
+                    </div>
+
+                    <details>
+                        <summary><a href="#" style="color: rgb(36, 129, 250); font-weight: 700;">View reply from
+                                dolly ki duniya </a></summary>
+                        <p>Thank you!</p>
+                    </details>
+                </div>
+
+            </div>
+
+
+
+
+            <!--  Comment 2 -->
+            <div class="comment video_details">
+                <div class="channel_img">
+                    <h2 style="padding: 10px; background-color: rgb(0, 238, 255); color: white; border-radius: 50px;">
+                        A</h2>
+                </div>
+                <div class="video_title">
+                    <p class="name">Anjali Vyas<small style="color: gray;">2 months ago</small></p>
+                    <p>Nice recpi mam</p>
+
+                    <div class="comment_like">
+                        <i class="material-icons">
+                            thumb_up
+                        </i>&nbsp;&nbsp;
+
+                        <i class="material-icons">
+                            thumb_down
+                        </i></a>
+                        <p class="notes">REPLY</p>
+                    </div>
+
+                    <details>
+                        <summary><a href="#" style="color: rgb(36, 129, 250); font-weight: 700;">View reply from
+                                dolly ki duniya </a></summary>
+                        <p>Thanks Anjali</p>
+                    </details>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Comment Ends -->
+        <div class="core_Suggestion">
+            <div>
+                <!-- Video Suggestions starts -->
+                <div class="videoSuggestions">
+
+                    <div class="video_suggestion">
+                        <a href="../03_Home page/index.html" class="video_suggestion_tag"
+                            style="color: white; background-color: black;">all</a>
+                    </div>
+
+                    <div class="video_suggestion">
+                        <a href="../04_Single page-home/singlePage-home.html" class="video_suggestion_tag">Learn</a>
+                    </div>
+
+                    <div class="video_suggestion">
+                        <a href="../07_Comedy/singlePage-home.html" class="video_suggestion_tag">Comedy</a>
+                    </div>
+
+                    <div class="video_suggestion">
+                        <a href="../04_Single page-home/singlePage-home.html" class="video_suggestion_tag">HTML</a>
+                    </div>
+                    <div class="video_suggestion">
+                        <a href="../06_Music/singlePage-home.html" class="video_suggestion_tag">Music</a>
+                    </div>
+
+                    <div class="video_suggestion">
+                        <a href="../03_Home page/index.html" class="video_suggestion_tag">JavaScript</a>
+                    </div>
+
+                    <div class="video_suggestion">
+                        <a href="#" class="video_suggestion_tag">scss</a>
+                    </div>
+
+                    <div class="video_suggestion">
+                        <a href="../07_Comedy/singlePage-home.html" class="video_suggestion_tag">cartoon</a>
+                    </div>
+
+
+                    <div class="video_suggestion">
+                        <a href="#" class="video_suggestion_tag">JavaScript</a>
+                    </div>
+
+                    <div class="video_suggestion">
+                        <a href="#" class="video_suggestion_tag">scss</a>
+                    </div>
+
+                    <div class="video_suggestion">
+                        <a href="#" class="video_suggestion_tag">cartoon</a>
+                    </div>
+                </div>
+
+
+                <!-- Video 1 -->
+
+                <div class="related_Video">
+
+                    <div class="video_thumbnail">
+                        <iframe width="230" height="120" src="https://www.youtube.com/embed/ETFBY0oHL3A"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <!-- <p class="video_time">2:34</p> -->
+
+                    </div>
+
+                    <div class="video_title">
+                        <p>आटा पिज़्ज़ा कैसे बनाये? | Bina cheese ka pizza || part-3
+                        </p>
+                        <small>Dolly Ki Duniya</small>
+                        <small>2,934 views. Apr 25, 2020</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/y5w-WkLaKsA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>Heart shape biscuit ||valentines day special||
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>136 views. Feb 13, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/cqQ2N0QXyyQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>3 चम्मच तेल में सूजी से झटपट नास्ता बनाये || Suji balles Snacks
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>116 views. Aug 20, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/mPB6sv4jdHU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>बिना चीज़ का पिज़्ज़ा कैसे बनाये? ||Without cheese pizza||
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>7,897 views. Mar 3, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 5 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/vdxVMeOnTNs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>अप्पे पैन में बनाये बिहारी स्टाइल लिट्टी चोखा || Deshi style Litti Chokha recipe |
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>262 views. Jul 25, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 6 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/srs9AZBeOAM"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>2 मिनट स्पेशल चाय रेसिपी - by Dolly Singh || Special chai
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>592 views. Jul 13, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 7 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/SA1vXjPbjWs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>एक डोसा के बैटर से बनाये चार तरह की मजेदार रेसिपी || Dosa || Uttapam || Idli || Punugulu recipe
+                        ||
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>406 viewsJun 23, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 8 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/P09_f7swdCQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>Easy Katori chaat recipe
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>87 viewsJul 9, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 9 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/D5lpY4-QWdg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>11 तरह की आसान पिज़्ज़ा रेसिपी लिस्ट, जिसे आप घर पर आसानी से बना सकते है - By Dolly Singh ||
+                        pizzzaaaa
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>223 views. Jul 11, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 10 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe  width="230" height="120" src="https://www.youtube.com/embed/trRjrAK2EJY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>मोनाको चाट रेसिपी इन हिंदी || Monaco Chaat Recipe || Fireless Chaat recipe ||
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>275 viewsJun 9, 2020</small>
+                </div>
+            </div>
+
+             <!-- Video 3 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/cqQ2N0QXyyQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>3 चम्मच तेल में सूजी से झटपट नास्ता बनाये || Suji balles Snacks
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>116 views. Aug 20, 2020</small>
+                </div>
+            </div>
+
+            <!-- Video 4 -->
+
+            <div class="related_Video">
+
+                <div class="video_thumbnail">
+                    <iframe width="230" height="120" src="https://www.youtube.com/embed/mPB6sv4jdHU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <!-- <p class="video_time">2:34</p> -->
+
+                </div>
+
+                <div class="video_title">
+                    <p>बिना चीज़ का पिज़्ज़ा कैसे बनाये? ||Without cheese pizza||
+                    </p>
+                    <small>Dolly Ki Duniya</small>
+                    <small>7,897 views. Mar 3, 2020</small>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Video Suggestions Ends -->
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        var likeCount = 31;
+
+        function addLike(likeAdd) {
+            likeCount++
+            document.getElementById("likecount").innerHTML = likeCount;
+
+            console.log(likeCount);
+        }
+
+        var SubscribeCount = 304;
+
+        function addSubscribe(subscribeAdd) {
+            SubscribeCount++
+            document.getElementById("SubscribeCount").innerHTML = SubscribeCount;
+
+            console.log(SubscribeCount);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

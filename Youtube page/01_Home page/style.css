@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+/* Navbar Starts */
+
+i {
+  margin: 5px;
+  color: #525151;
+}
+
+::placeholder {
+  padding-left: 7px;
+}
+
+.navBar {
+  align-items: center;
+  margin: 0 10px;
+}
+
+.navBar .navbar_items {
+  display: flex;
+  margin: 2px 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar .navbar_item {
+  display: flex;
+  align-items: center;
+}
+
+.navBar .navbar_item .navBar_logo {
+}
+.navBar .navbar_item .navBar_logo_img {
+  margin-left: 40px;
+}
+
+.navBar_search {
+  display: flex;
+  align-items: center;
+}
+
+.navBar_search .navBar_Search_input {
+  padding: 8px 0;
+  width: 35rem;
+  border: gray 1px solid;
+  border-radius: 2px;
+}
+
+.navBar_search .navBar_search_icon {
+  padding: 6px 18px;
+  margin-left: -5px;
+  border: gray 1px solid;
+  border-radius: 2px;
+
+  background-color: #dbd8d8;
+}
+
+.navBar_search .navBar_search_mic {
+  background-color: #dad8d8;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+.navBar_icons {
+  display: flex;
+  align-items: center;
+}
+
+.navBar_icons .navBar_icons_user {
+  background-color: #dad8d8;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+/* //  Navebar ends
+  
+  //Sidebar starts */
+
+.core_sidebar {
+  height: calc(100vh - 70px);
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 70px;
+  height: 100%;
+  /* background-color: #245323; */
+}
+.sidebar_icons {
+  text-align: center;
+  margin-top: 4px;
+  /* margin-right: 1rem; */
+}
+
+.sidebar_icon {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* //Sidebar Ends */
+
+.core_sidebar2 {
+  height: calc(100vh - 70px);
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar2 {
+  width: 250px;
+  height: 100%;
+  background-color: #faffff;
+  overflow-y: scroll;
+}
+
+.sidebar_icons2 {
+  display: flex;
+  text-align: left;
+  padding: 8px 30px;
+}
+
+.sidebar_icons2:hover {
+  background-color: rgb(231, 231, 231);
+}
+
+.sidebar_icon2 a {
+  color: gray;
+}
+
+.sidebar_navbar {
+  margin-left: 1rem;
+  margin-top: -10px;
+  color: rgb(116, 114, 114);
+  font-weight: bold;
+}
+
+/* Fullside bar Ends */
+
+/* // Video Suggestions starts */
+
+.videoSuggestions {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 24px;
+  overflow-x: scroll;
+}
+
+.video_suggestion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 0;
+  height: 30px;
+  /* background-color: rgb(76, 59, 94); */
+}
+
+.video_suggestion_tag {
+  text-decoration: none;
+  font-size: 14px;
+  background-color: #dad8d8;
+  color: #242323;
+  padding: 8px 20px;
+  margin: 0 5px;
+  border-radius: 20px;
+}
+
+.video_suggestion_tag:hover{
+  background-color: #807d7d;
+  color: black;
+}
+
+.hr_line {
+  margin-left: 6rem;
+}
+
+/* Video Listing */
+
+.videos_list {
+  width: 90%;
+  height: 90%;
+  margin-top: 70px;
+  padding: 25px 15px;
+  overflow-y: scroll;
+  position: fixed;
+  clear: both;
+  margin-left: 100px;
+  background-color: rgb(245, 241, 241);
+}
+
+.videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.single_video {
+  width: 320px;
+  margin-right: 5px;
+  margin-bottom: 30px;
+}
+
+.video_thumbnail {
+  width: 310px;
+  height: 170px;
+}
+
+.video_thumbnail iframe {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.video_time {
+  color: white;
+  background-color: black;
+  padding: 2px 5px;
+  float: right;
+  z-index: 1;
+  /* margin-top: -20px; */
+}
+.video_details {
+  display: flex;
+  margin-top: 5px;
+}
+.video_details .channel_img img {
+  width: 40px;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+
+.video_title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.video_title h4 {
+  font-size: 14px;
+  color: rgb(43, 42, 42);
+  /* line-height: 20px; */
+}
+
+.video_details,
+h4,
+span,
+p {
+  text-decoration: none;
+  color: #525151;
+  font-size: 14px;
+  /* margin-left: 5px; */
+}
+
+@media only screen and (max-width: 600px) {
+  #search_desktop {
+    display: none;
+  }
+}
