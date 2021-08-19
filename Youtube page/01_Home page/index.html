@@ -14,22 +14,6 @@
 
     <link rel="stylesheet" href="./style.css">
 
-    <script>
-        function toggleHide() {
-            let button = document.getElementById('btn');
-            let fullNavbar = document.getElementById('full_Sidebar');
-            let sidebar = document.getElementById('sidebar');
-            if (sidebar.style.display != 'none') {
-                sidebar.style.display = 'none';
-                fullNavbar.style.display = 'block'
-            } else {
-                fullNavbar.style.display = 'none';
-                sidebar.style.display = 'block';
-            }
-
-        }
-    </script>
-
     <title>Youtube Home</title>
 
 </head>
@@ -77,7 +61,7 @@
                 </div>
 
                 <div>
-                    <a href="#"><i class="material-icons">
+                    <a href="../13_Studio/Studio.html"><i class="material-icons">
                             apps
                         </i></a>
                 </div>
@@ -89,8 +73,8 @@
                 </div>
 
                 <div>
-                    <a href="../01_Login page/01_google_Login_Page.html"><img src="./Images/dolly.png" alt="user logo"
-                            title="Ligin" width="60px"></a>
+                    <a href="../03_Login page/01_google_Login_Page.html"><img src="./Images/dolly.png" alt="user logo"
+                            title="Sign in" width="40px"></a>
                 </div>
             </div>
         </div>
@@ -107,24 +91,24 @@
                     <a href="#"><i class="material-icons" style="color: red;">
                             home
                         </i></a>
-                    <p style="font-size: 12px;">Home</p>
+                    <p style="font-size: 12px;"><a href="./index.html">Home</a></p>
                 </div>
                 <div class="sidebar_icon">
-                    <a href="#"><i class="material-icons">
+                    <a href="../09_explore/explore.html"><i class="material-icons">
                             explore
                         </i></a>
                     <p style="font-size: 12px;">Explore</p>
                 </div>
 
                 <div class="sidebar_icon">
-                    <a href="#"><i class="material-icons">
+                    <a href="../05_Single video/singleVideoPage.html"><i class="material-icons">
                             subscriptions
                         </i></a>
                     <p style="font-size: 12px;">Subscriptions</p>
                 </div>
 
                 <div class="sidebar_icon">
-                    <a href="#"><i class="material-icons">
+                    <a href="../01_Home page/index.html"><i class="material-icons">
                             video_library
                         </i></a>
                     <p style="font-size: 12px;">Library</p>
@@ -367,7 +351,7 @@
         <div class="videoSuggestions">
 
             <div class="video_suggestion">
-                <a href="../03_Home page/index.html" class="video_suggestion_tag"
+                <a href="../01_Home page/index.html" class="video_suggestion_tag"
                     style="color: white; background-color: black;">all</a>
             </div>
 
@@ -378,6 +362,9 @@
             <div class="video_suggestion">
                 <a href="../06_Music/singlePage-home.html" class="video_suggestion_tag">Music</a>
             </div>
+            <div class="video_suggestion">
+                <a href="../11_manas Mishra/manas.html" class="video_suggestion_tag">ManashMishara</a>
+            </div>
 
             <div class="video_suggestion">
                 <a href="../07_Comedy/singlePage-home.html" class="video_suggestion_tag">Comedy</a>
@@ -385,6 +372,10 @@
 
             <div class="video_suggestion">
                 <a href="../05_Single video/singleVideoPage.html" class="video_suggestion_tag">FOOD</a>
+            </div>
+
+            <div class="video_suggestion">
+                <a href="../12_Sandeep Maheshwari/motivation.html" class="video_suggestion_tag">SandeepMaheshwari</a>
             </div>
 
             <div class="video_suggestion">
@@ -1463,6 +1454,34 @@
                     </div>
                 </div>
 
+                 <!-- Video5 -->
+
+                 <div class="single_video">
+
+                    <div class="video_thumbnail">
+                        <div><iframe width="560" height="315" src="https://www.youtube.com/embed/btj35dh3_U8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe></div>
+                        <p class="video_time">2:34</p>
+                    </div>
+
+                    <div class="video_details">
+                        <div class="channel_img">
+                            <img src="./Images/namaste javaScript.png" alt="">
+                        </div>
+                        <div class="video_title">
+                            <h4>Callback Functions in JS ft. Event Listeners 🔥| Namaste JavaScript</h4>
+                            <p>Namaste JavaScript<span class="material-icons">
+                                    check_circle
+                                </span></p>
+                            <p>82,140 views. Dec 20, 2020</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
                 <!-- Video5 -->
 
                 <div class="single_video">
@@ -1525,7 +1544,7 @@
 
 
 
-
+<script src="./index.js"></script>
 
 </body>
 

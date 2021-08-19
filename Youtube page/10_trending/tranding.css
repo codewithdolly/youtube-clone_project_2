@@ -1,0 +1,133 @@
+
+
+.core_sidebar2 {
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sidebar2 {
+    width: 250px;
+    height: 100%;
+    background-color: #faffff;
+    overflow-y: scroll;
+}
+
+.sidebar_icons2 {
+    display: flex;
+    text-align: left;
+    padding: 8px 30px;
+
+}
+
+.sidebar_icons2:hover {
+    background-color: rgb(231, 231, 231);
+
+}
+
+.sidebar_icon2 a {
+    color: gray;
+}
+
+.sidebar_nav2 {
+    margin-left: 1rem;
+    color: rgb(116, 114, 114);
+    font-weight: bold;
+}
+
+.core_body{
+    overflow-y: scroll;
+}
+
+
+.motivation_video{
+    margin: 0 150px; 
+}
+
+.videos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 10px;
+  }
+  
+  .single_video {
+    width: 280px;
+    margin-right: 5px;
+    margin-bottom: 100px;
+  }
+  
+  .video_thumbnail {
+    width: 290px;
+    height: 200px;
+  }
+  
+  .video_thumbnail iframe {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .video_time {
+    color: white;
+    background-color: black;
+    padding: 2px 5px;
+    float: right;
+    margin-top: -10px;
+  }
+  .video_details {
+    display: flex;
+    margin-top: 5px;
+  }
+  .video_details .channel_img img {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: -5px;
+  }
+  
+  .video_title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    line-height: 8px;
+  }
+  
+  .video_title .title{
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(43, 42, 42);
+    line-height: 20px;
+  }
+  
+  .video_details,
+  span,
+  p {
+    text-decoration: none;
+    color: #525151;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+
+  .video_title{
+    margin-left: 10px;
+  }
+  .related_Video{
+    display: flex;
+    line-height: 22px;
+    margin: 10px 0;
+  }
+  .video_thumbnail, iframe{
+    width: 200;
+    height: 100;
+  }
+  .tranding_video iframe{
+      width: 300px;
+      height: 200px;
+  }
+
+  .a_link{
+    text-decoration: none;
+    color: black;
+  }

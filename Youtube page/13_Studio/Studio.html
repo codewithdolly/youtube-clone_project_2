@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ff6d44ecaf.js" crossorigin="anonymous"></script>
+
+    <!-- Google font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- CSS Link -->
+
+    <link rel="stylesheet" href="./studio.css">
+
+    <script>
+        function toggleHide() {
+            let button = document.getElementById('btn');
+            let fullNavbar = document.getElementById('full_Sidebar');
+            let sidebar = document.getElementById('sidebar');
+            if (sidebar.style.display != 'none') {
+                sidebar.style.display = 'none';
+                fullNavbar.style.display = 'block'
+            } else {
+                fullNavbar.style.display = 'none';
+                sidebar.style.display = 'block';
+            }
+
+        }
+    </script>
+
+    <title>Youtube Home</title>
+
+</head>
+
+<body>
+    <!-- Navbar Starts -->
+
+    <div class="navBar shadow m-0 p-0">
+        <div class="navbar_items">
+            <div class="navbar_item">
+                <div class="navBar_home">
+                    <a href="#" id="btn" onclick="toggleHide()"><i class="material-icons">
+                            menu</i></a>
+                </div>
+                <div class="navBar_logo">
+                    <a href="../01_Home page/index.html"><img src="./Images/studio.png" alt="youtube logo"
+                            class="navBar_logo_img" style="width: 120px; "></a>
+                </div>
+            </div>
+
+            <!-- <div class="input-group navBar_icons cal-md-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text material-icons bg-info ">Search</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search" >
+              </div> -->
+
+            <div class="navBar_search mb-2" id="search_desktop">
+                <div class="input-group-prepend">
+                    <span class="fas fa-search border border-right-0 p-2 pl-2 pt-3 text-muted"></span>
+                    <input type="text" name="" value="" placeholder="Search" class="navBar_Search_input border-left-0">
+
+                </div>
+
+            </div>
+
+            <div class="navBar_icons">
+                <div>
+                    <a href="#"><i class="material-icons">
+                            help_outline
+                        </i></a>
+                </div>
+
+                <div>
+                    <button class="btn border mx-3"><i class="fa fa-video text-danger"></i> CREATE</button>
+
+                </div>
+
+                <div>
+                    <a href="../03_Login page/01_google_Login_Page.html"><img src="./Images/dolly.png" alt="user logo"
+                            title="Sign in" width="50px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <hr class="hr_line"> -->
+    <!-- Navbar ends -->
+
+    <!-- Sidebar Starts -->
+    <div class="core_sidebar">
+        <div class="sidebar">
+
+            <div class="sidebar_icons">
+                <div style="color: red;" class="sidebar_icon">
+                    <a href="#"><i class="fas fa-home text-danger"></i></a>
+                    <p style="font-size: 12px;"><a href="./index.html">Home</a></p>
+                </div>
+                <div class="sidebar_icon">
+                    <a href="../09_explore/explore.html"><i class="material-icons">
+                            explore
+                        </i></a>
+                    <p style="font-size: 12px;">Explore</p>
+                </div>
+
+                <div class="sidebar_icon">
+                    <a href="#"><i class="material-icons">
+                            subscriptions
+                        </i></a>
+                    <p style="font-size: 12px;">Subscriptions</p>
+                </div>
+
+                <div class="sidebar_icon">
+                    <a href="#"><i class="material-icons">
+                            video_library
+                        </i></a>
+                    <p style="font-size: 12px;">Library</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Sidebar Ends -->
+
+
+        <!-- ON CLICK SIDEBAR STARTS -->
+
+        <!-- Sidebar Starts -->
+        <div class="core_sidebar2" id="full_Sidebar" style="display: none; width: 70px;">
+            <div class="sidebar2">
+
+                <div class="sidebar_icons2" style=" padding-top: 15px;background-color: rgb(231, 231, 231);">
+
+                    <!-- Icon1 -->
+
+                    <div style="color: red;" class="sidebar_icon2">
+                        <a href="#"><i class="material-icons" style="color: red;">
+                                home
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Home</p>
+                    </div>
+
+                </div>
+
+                <!-- icon2 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                explore
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Explore</p>
+                    </div>
+
+                </div>
+
+                <!-- icon2 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                subscriptions
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Subscriptions</p>
+                    </div>
+
+                </div>
+
+                <hr>
+                <!-- icon3 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                video_library
+
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Library</p>
+                    </div>
+
+                </div>
+
+
+                <!-- icon4 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                history
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>History</p>
+                    </div>
+
+                </div>
+
+                <!-- icon5 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                watch_later
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Watch later</p>
+                    </div>
+
+                </div>
+
+                <!-- icon6 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                thumb_up
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Likes</p>
+                    </div>
+
+                </div>
+                <hr>
+
+                <!-- icon7 -->
+                <p style="color: gray; margin-left: 8px;"><strong>MORE FROM YOUTUBE</strong></p>
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                play_circle_filled
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>YouTube Video Premium</p>
+                    </div>
+
+                </div>
+
+                <!-- icon8 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                theaters
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Movies</p>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- icon9 -->
+                <p style="color: gray; margin-left: 8px;"><strong>FUN & LEARN TOGETHER</strong></p>
+
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                sports_esports
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Gaming</p>
+                    </div>
+
+                </div>
+
+                <!-- icon10 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                online_prediction
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Live</p>
+                    </div>
+
+                </div>
+
+                <!-- icon11 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                emoji_objects
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Learning</p>
+                    </div>
+
+                </div>
+
+
+                <!-- icon12 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                emoji_events
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Sports</p>
+                    </div>
+
+                </div>
+                <hr>
+
+                <!-- icon13 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                settings
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Settings</p>
+                    </div>
+
+                </div>
+
+                <!-- icon14 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                assistant_photo
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Report history</p>
+                    </div>
+
+                </div>
+
+                <!-- icon15 -->
+                <div class="sidebar_icons2">
+                    <div class="sidebar_icon2">
+                        <a href="#"><i class="material-icons">
+                                contact_support
+                            </i></a>
+                    </div>
+                    <div class="sidebar_nav">
+                        <p>Help</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ON CLICK SIDEBAR Ends -->
+
+        <div class="channel_content">
+            <div class="content_list">
+                <h4 class="my-3 ml-3 font-weight-bold">Channel content</h4>
+
+                <div class=" ml-3 pt-4 text-muted">
+                    <small class="mr-5"
+                        style="border-bottom: #4d94ff 4px solid; color: #4d94ff; padding-bottom: 20px;"><b>Upload</b></small>
+                    <small><b>Live</b></small>
+                </div>
+                <hr>
+
+                <!-- filter starts -->
+                <div class="filter d-flex px-4 py-1 text-muted">
+                    <div class="pr-4">
+                        <span class="material-icons">
+                            filter_list
+                        </span>
+                    </div>
+                    <div>
+                        Filter
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!-- filter Ends -->
+
+                <!-- Video suggestion Starts -->
+
+                <div class="core_videoSuggestion">
+
+                    <!-- 1st column -->
+
+                    <div class="col-md-4">
+                        <input type="checkbox" class="form-check-input pr-5" id="exampleCheck1">
+                        <small>Video</small>
+
+                        <!-- 2nd column -->
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>visibility</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>Restrictions</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>Dates</small></div>
+                    </div>
+
+                    <!-- <div class="col-md-2"></div> -->
+                    <!-- 3rd column -->
+
+                    <div class="col-md-3 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>Views</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>Comments</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>Likes</small></div>
+                    </div>
+
+                </div>
+
+                <!-- 1 video details -->
+                <hr>
+
+                <div class="core_videoSuggestion">
+
+                    <!-- 1st column -->
+
+                    <div class="col-md-4 d-flex">
+                        <div><input type="checkbox" class="form-check-input pr-5" id="exampleCheck1"></div>
+                        <div><img src="./Images/food1.png" alt="" width="100px"></div>
+                        <div class="ml-2"><small>गैस पे बनाये दाल बाटी रेसिपी (Dal bati recipe)हम गैस पे दाल बाटी बनाएंगे वो भी कोयले वाले बाटी के
+                                जैसा इस बाटी को बनाना बहुत ही आसान है और आप इसे 20 मिनट के अंदर बना सकते है। </small>
+                        </div>
+
+
+                        <!-- 2nd column -->
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div style="margin: 1rem 0 0 4rem; align-items: center;" class="d-flex">
+                            <i class="material-icons text-success">
+                                visibility
+                            </i><small>Public</small>
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>None</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>Mar 21, 2021<br>Published</small></div>
+                    </div>
+
+                    <!-- <div class="col-md-1"></div> -->
+                    <!-- 3rd column -->
+
+                    <div class="col-md-3 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>156</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 5rem;"><small>14</small></div>
+                        <div style="margin: 1rem 0 0 5rem;"><small>100.00 <br>8 likes</small>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 2 video details -->
+                <hr>
+
+                <div class="core_videoSuggestion">
+
+                    <!-- 1st column -->
+
+                    <div class="col-md-4 d-flex">
+                        <div><input type="checkbox" class="form-check-input pr-5" id="exampleCheck1"></div>
+                        <div><img src="./Images/food2.png" alt="" width="100px"></div>
+                        <div class="ml-2"><small>3 चम्मच तेल में सूजी से झटपट नास्ता बनाये | हम बहुत ही कम तेल में बनाने वाला चटपटा नास्ता लेकर आये है, इसे हम सूजी से बनाएंगे।  </small>
+                        </div>
+
+
+                        <!-- 2nd column -->
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div style="margin: 1rem 0 0 4rem; align-items: center;" class="d-flex">
+                            <i class="material-icons text-success">
+                                visibility
+                            </i><small>Public</small>
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>None</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>Mar 21, 2021<br>Published</small></div>
+                    </div>
+
+                    <!-- <div class="col-md-1"></div> -->
+                    <!-- 3rd column -->
+
+                    <div class="col-md-3 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>117</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 5rem;"><small>18</small></div>
+                        <div style="margin: 1rem 0 0 5rem;"><small>100.00 <br>9 likes</small>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <!-- 3 video details -->
+                <hr>
+
+                <div class="core_videoSuggestion">
+
+                    <!-- 1st column -->
+
+                    <div class="col-md-4 d-flex">
+                        <div><input type="checkbox" class="form-check-input pr-5" id="exampleCheck1"></div>
+                        <div><img src="./Images/food3.png" alt="" width="100px"></div>
+                        <div class="ml-2"><small>2 मिनट स्पेशल चाय रेसिपी - by Dolly Singh आज के इस वीडियो में मैं आपको स्पेशल चाय ( Indian Special tea)</small>
+                        </div>
+
+
+                        <!-- 2nd column -->
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div style="margin: 1rem 0 0 4rem; align-items: center;" class="d-flex">
+                            <i class="material-icons text-success">
+                                visibility
+                            </i><small>Public</small>
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>None</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>Jul 13, 2021<br>Published</small></div>
+                    </div>
+
+                    <!-- <div class="col-md-1"></div> -->
+                    <!-- 3rd column -->
+
+                    <div class="col-md-3 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>593</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 5rem;"><small>4</small></div>
+                        <div style="margin: 1rem 0 0 5rem;"><small>100.00 <br>9 likes</small>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 4 video details -->
+                <hr>
+
+                <div class="core_videoSuggestion">
+
+                    <!-- 1st column -->
+
+                    <div class="col-md-4 d-flex">
+                        <div><input type="checkbox" class="form-check-input pr-5" id="exampleCheck1"></div>
+                        <div><img src="./Images/food4.png" alt="" width="100px"></div>
+                        <div class="ml-2"><small>वैसे तो तेल वाला खाना हमारे सेहत के लिए अच्छी नहीं होती है।  लेकिन अगर आपको चटपटा खाना खाना पसंद है तो आप इसे घर पर बना सकते है |</small>
+                        </div>
+
+
+                        <!-- 2nd column -->
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div style="margin: 1rem 0 0 4rem; align-items: center;" class="d-flex">
+                            <i class="material-icons text-success">
+                                visibility
+                            </i><small>Public</small>
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>None</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>Mar 21, 2021<br>Published</small></div>
+                    </div>
+
+                    <!-- <div class="col-md-1"></div> -->
+                    <!-- 3rd column -->
+
+                    <div class="col-md-3 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>156</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 5rem;"><small>14</small></div>
+                        <div style="margin: 1rem 0 0 5rem;"><small>100.00 <br>8 likes</small>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 5 video details -->
+                <hr>
+
+                <div class="core_videoSuggestion">
+
+                    <!-- 1st column -->
+
+                    <div class="col-md-4 d-flex">
+                        <div><input type="checkbox" class="form-check-input pr-5" id="exampleCheck1"></div>
+                        <div><img src="./Images/food5.png" alt="" width="100px"></div>
+                        <div class="ml-2"><small> आम की क़ुल्फ़ी - by Dolly Singh  || आम से हम बहुत कुछ बना सकते है, लेकिन चलिए आज हम आपको पके हुए आम से कुछ नया बनाकर दिखते है।  आज के इस वीडियो में मैं "आम के अंदर आम की कुल्फी" बनाउंगी। </small>
+                        </div>
+
+
+                        <!-- 2nd column -->
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div style="margin: 1rem 0 0 4rem; align-items: center;" class="d-flex">
+                            <i class="material-icons text-success">
+                                visibility
+                            </i><small>Public</small>
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>None</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>July 5, 2021<br>Published</small></div>
+                    </div>
+
+                    <!-- <div class="col-md-1"></div> -->
+                    <!-- 3rd column -->
+
+                    <div class="col-md-3 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>105</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 5rem;"><small>21</small></div>
+                        <div style="margin: 1rem 0 0 5rem;"><small>100.00 <br>21 likes</small>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 6 video details -->
+                <hr>
+
+                <div class="core_videoSuggestion fixed1">
+
+                    <!-- 1st column -->
+
+                    <div class="col-md-4 d-flex">
+                        <div><input type="checkbox" class="form-check-input pr-5" id="exampleCheck1"></div>
+                        <div><img src="./Images/food6.png" alt="" width="100px"></div>
+                        <div class="ml-2"><small>एक बैटर से बनाये 6 तरीके की पकोड़ा || Paneer Pakoda || Pyaj pokoda || bread pakoda || Aloo Pakoda ||</small>
+                        </div>
+
+
+                        <!-- 2nd column -->
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div style="margin: 1rem 0 0 4rem; align-items: center;" class="d-flex">
+                            <i class="material-icons text-success">
+                                visibility
+                            </i><small>Public</small>
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>None</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>July 30, 2021<br>Published</small></div>
+                    </div>
+
+                    <!-- <div class="col-md-1"></div> -->
+                    <!-- 3rd column -->
+
+                    <div class="col-md-3 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>107</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 5rem;"><small>14</small></div>
+                        <div style="margin: 1rem 0 0 5rem;"><small>100.00 <br>16 likes</small>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- 7 video details -->
+                <hr>
+
+                <div class="core_videoSuggestion">
+
+                    <!-- 1st column -->
+
+                    <div class="col-md-4 d-flex">
+                        <div><input type="checkbox" class="form-check-input pr-5" id="exampleCheck1"></div>
+                        <div><img src="./Images/food7.png" alt="" width="100px"></div>
+                        <div class="ml-2"><small>रसगुल्ला और जलेबी के बाद सबसे ज्यादा पसंद की जाने वाली मिठाई - मालपुआ | </small>
+                        </div>
+
+
+                        <!-- 2nd column -->
+                    </div>
+                    <div class="col-md-4 d-flex">
+                        <div style="margin: 1rem 0 0 4rem; align-items: center;" class="d-flex">
+                            <i class="material-icons text-success">
+                                visibility
+                            </i><small>Public</small>
+                        </div>
+
+                        <div style="margin: 1rem 0 0 4rem;"><small>None</small></div>
+                        <div style="margin: 1rem 0 0 4rem;"><small>Jul 3, 2020 <br>Published</small></div>
+                    </div>
+
+                    <!-- <div class="col-md-1"></div> -->
+                    <!-- 3rd column -->
+
+                    <div class="col-md-3 d-flex">
+                        <div style="margin: 1rem 0 0 4rem;"><small>154</small>
+
+                        </div>
+
+                        <div style="margin: 1rem 0 0 5rem;"><small>36</small></div>
+                        <div style="margin: 1rem 0 0 5rem;"><small>100.00 <br>19 likes</small>
+                            <div class="progress" style="height: 6px;">
+                                <div class="progress-bar w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- Video suggestion Starts -->
+                <hr>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
